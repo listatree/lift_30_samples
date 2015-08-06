@@ -32,7 +32,7 @@ class Boot {
 
       LiftRules.unloadHooks.append(vendor.closeAllConnections_! _)
 
-      DB.defineConnectionManager(DefaultConnectionIdentifier, vendor)
+      DB.defineConnectionManager(util.DefaultConnectionIdentifier, vendor)
     }
 
     // Use Lift's Mapper ORM to populate the database

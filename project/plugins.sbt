@@ -1,7 +1,4 @@
-libraryDependencies <+= sbtVersion(v => "com.github.siasia" %% "xsbt-web-plugin" % "0.12.0-0.2.11.1")
+// The plugins can still run with Scala 2.10 but an update to Scala 2.11+ should be done soon
+scalaVersion := "2.10.5"
 
-//Uncoment this line to enable the sbt idea plugin
-addSbtPlugin("com.github.mpeltonen" % "sbt-idea" % "1.1.0")
-
-//Uncoment this line to enable the sbt eclipse plugin
-addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.1.0")
+addSbtPlugin("com.earldouglas" % "xsbt-web-plugin" % "0.9.0")
